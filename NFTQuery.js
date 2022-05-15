@@ -160,6 +160,7 @@ const filteredArray = (array, key) => {
 }
 
 const onCallFailure = () => {
+    if (userAddress === "") return;
     setTimeout(() => {
         getNFTArray();
     }, 5000)
